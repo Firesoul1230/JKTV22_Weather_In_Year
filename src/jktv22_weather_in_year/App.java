@@ -6,6 +6,7 @@
 package jktv22_weather_in_year;
 
 import java.util.Scanner;
+import tasks.InitProject;
 /**
  *
  * @author pupil
@@ -18,6 +19,8 @@ public class App {
     public void run() {
         System.out.println("--- Weather in year ---");
         boolean repeat = true;
+        InitProject initProject = new InitProject();
+        initProject.init(); 
         do {
             System.out.println("Выберите номер задачи: ");
             System.out.println("0. Выход из программы.");
